@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import YourReactComponent from "./components/Nlp"
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Navbar />
+    <YourReactComponent />
+    <Footer />
   </React.StrictMode>
 );
 
