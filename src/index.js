@@ -2,17 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Sim from './components/Sim'
 import reportWebVitals from './reportWebVitals';
-import YourReactComponent from "./components/Nlp"
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer"
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Navbar />
-    <YourReactComponent />
-    <Footer />
+
+    <BrowserRouter>
+      {/* Routing */}
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/sim" element={<Sim />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

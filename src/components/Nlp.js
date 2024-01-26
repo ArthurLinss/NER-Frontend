@@ -14,7 +14,7 @@ class YourReactComponent extends Component {
     this.state = {
       resultVisible: false,
       resultText: "",
-      inputText: "Hello, I am Maria and I am from South Africa.",
+      inputText: "Hello, I am Maria and I am from South Africa, Africa. I am working 50% of my time at Apple as Scientist. Yesterday, I visited the third Super Bowl.",
       styleValue: "ent",
       nerLabels: [],
       isHelpVisible: false

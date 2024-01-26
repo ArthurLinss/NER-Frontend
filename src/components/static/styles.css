@@ -2,19 +2,24 @@ body {
     background-color: #f2f2f2;
     font-family: Arial, sans-serif;
 }
+
 .navbar {
-    background-color: #c2b2b2;
+    background-color: #d2d2d7 !important;
     border-bottom: 0px solid #c2b2b2;
     padding-top: 5px; /* Adjust top padding */
     padding-bottom: 5px; /* Adjust bottom padding */
     min-height: 40px; /* Set a minimum height */
+    display: flex; /* Use Flexbox */
+    align-items: center; /* Vertically center content */
 }
 
 .navbar-brand {
+    text-align: center;
     color: #0072CE;
     font-weight: bold;
-    padding: 3px 15px; /* Adjust vertical and horizontal padding */
-    font-size: 18px; /* Reduce font size if needed */
+    padding: 0 15px; /* Adjust padding */
+    font-size: 18px;
+    display: block; /* Ensure it takes full width */
 }
 
 .navbar-toggler-icon {
@@ -30,7 +35,7 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #c2b2b2;
+    background-color: #d2d2d7 !important;
     color: #333;
     text-align: center;
     padding: 8px 0; /* Adjust vertical padding */
@@ -92,6 +97,11 @@ input[type="submit"], button {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a simple shadow */
 }
 
+button {
+    padding: 10px;
+    margin-top: 30px;
+}
+
 button:hover {
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Change shadow on hover */
     /* Adjust the values to get the desired hover shadow effect */
@@ -102,9 +112,10 @@ button:hover {
     font-family: Arial, sans-serif;
     color: black;
     background-color: #f7f7f7;
-    padding: 10px;
+    padding: 2s0px;
     border-radius: 5px;
     margin-top: 20px;
+    overflow-x: auto; /* Add horizontal scrollbar */
 }
         /* Hide the "Result" heading initially */
 .result {
